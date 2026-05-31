@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy â€” HealthLens</title>
+  <title>Privacy Policy &ndash; HealthLens</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,52 +24,146 @@
 
     <div class="doc">
 
-      <h2>What we collect</h2>
-      <p><strong>Health documents</strong> you upload (PDFs, images, pathology results, letters).</p>
-      <p><strong>Supplement and medication</strong> details and photos you enter.</p>
-      <p><strong>Personal notes</strong> and symptom logs you create.</p>
-      <p><strong>Cycle data</strong> if you use the cycle tracking feature.</p>
-      <p><strong>Subscription status</strong> only (active/inactive) â€” no payment details.</p>
-      <p><strong>Anonymised analytics</strong> about feature usage, only with your consent.</p>
-      <p>We do not collect your name, email, location, or any account credentials.</p>
+      <h2>1. About This Policy</h2>
+      <p>This policy explains how HealthLens collects, uses, stores, and handles your personal information. HealthLens is operated by [COMPANY NAME] [ABN], based in New South Wales, Australia.</p>
+      <p>This policy applies to users in Australia, New Zealand, the United States, and Canada. Country-specific rights are set out in the <a href="#rights">Your Rights</a> section below.</p>
+      <p>For privacy enquiries contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>.</p>
 
       <hr>
 
-      <h2>How your health data is processed</h2>
-      <p><strong>All health data is stored on your device only.</strong> HealthLens does not maintain a server-side database of your records.</p>
-      <p>When you upload a document or generate an AI summary, your document content is sent over encrypted HTTPS to our processing server in Australia, then forwarded to Anthropic (United States) for AI analysis using Claude. The result is returned to your device and stored locally. <strong>No health data is retained on our servers after processing.</strong></p>
+      <h2>2. What We Collect</h2>
+
+      <h3>Information you provide</h3>
+      <ul>
+        <li><strong>Health documents</strong> &mdash; PDFs, images, and other documents you upload for processing (pathology results, specialist letters, discharge summaries, imaging reports).</li>
+        <li><strong>Medication &amp; supplement information</strong> &mdash; product names, ingredients, dosage details, and photos you enter or photograph.</li>
+        <li><strong>Personal notes</strong> &mdash; free-text notes and symptom logs you create.</li>
+        <li><strong>Cycle data</strong> &mdash; menstrual cycle dates and symptoms, if you use cycle tracking.</li>
+        <li><strong>Sign-in identity</strong> &mdash; your name and email address as provided by Apple Sign-In or Google Sign-In when you create an account.</li>
+      </ul>
+
+      <h3>Collected automatically</h3>
+      <ul>
+        <li><strong>Device information</strong> &mdash; device type, OS version, and app version, used for crash reporting.</li>
+        <li><strong>Subscription status</strong> &mdash; active/inactive/expired, managed by Apple App Store or Google Play. No payment card details.</li>
+        <li><strong>Anonymised analytics</strong> &mdash; feature usage data, only with your consent during onboarding. No health content included.</li>
+      </ul>
+
+      <h3>What we do NOT collect</h3>
+      <p>We do not collect your precise or approximate location. We do not share or sell your data to advertisers or data brokers.</p>
 
       <hr>
 
-      <h2>AI processing &amp; third-party services</h2>
-      <p>Anthropic processes your document content solely to generate AI analysis. Anthropic does not use API content to train its models by default. Anthropic retains API request logs for up to <strong>30 days</strong> for safety monitoring, then deletes them.</p>
-      <p>Subscription billing is handled by Apple or Google depending on your platform. No health data is shared with billing or payment providers.</p>
+      <h2>3. How Your Health Data Is Processed</h2>
+      <p><strong>Your health data is stored locally on your device only.</strong> HealthLens does not maintain a server-side database of your health records, notes, medications, or summaries.</p>
+      <p>When you upload a document or request an AI summary:</p>
+      <ol>
+        <li>Your document is transmitted over encrypted HTTPS to our processing server in Sydney, Australia (DigitalOcean).</li>
+        <li>The document content is forwarded to <strong>Anthropic</strong> (United States) for AI analysis using Claude models. This is a cross-border disclosure &mdash; see Section 4.</li>
+        <li>The AI-generated result is returned to your device and stored locally.</li>
+        <li><strong>No health document content is retained on HealthLens servers after processing.</strong> The pipeline is stateless.</li>
+      </ol>
+      <p>By using the App, you consent to this transient processing of your health information.</p>
 
       <hr>
 
-      <h2>Data storage &amp; security</h2>
-      <p>Your health data is stored in an encrypted database on your device. All transmissions use TLS (HTTPS). Our server does not store health data after processing. Your device passcode and biometric lock protect your local data.</p>
-      <p>Device backups (iCloud / Google Backup) may include HealthLens data under Apple's and Google's policies. Use Settings â†’ Export to create your own portable backup.</p>
+      <h2>4. Cross-Border Disclosure &amp; AI Processing</h2>
+      <p>Document content is transmitted to <strong>Anthropic, Inc.</strong> (San Francisco, United States) for AI processing. This is a cross-border disclosure under the Australian Privacy Act and equivalent laws in our other launch markets.</p>
+      <ul>
+        <li>Anthropic processes your document content solely to generate the AI analysis returned to your device.</li>
+        <li>Anthropic does not use API request content to train its models by default.</li>
+        <li>Anthropic retains API request logs for up to <strong>30 days</strong> for safety monitoring, then deletes them.</li>
+      </ul>
+      <p>If you do not wish your document content to be transmitted to Anthropic, do not use the document upload or AI summary features. Manual notes and cycle tracking operate entirely on-device with no cross-border disclosure.</p>
 
       <hr>
 
-      <h2>Your rights</h2>
+      <h2>5. AI Disclosure</h2>
+      <p>HealthLens uses Anthropic&rsquo;s Claude AI models to analyse documents and generate summaries. AI-generated content is labelled within the App. AI outputs may contain errors, omissions, or inaccuracies &mdash; they are for personal organisational purposes only and do not constitute medical advice.</p>
+      <p>HealthLens is not a Software as a Medical Device (SaMD) under the Australian <em>Therapeutic Goods Act 1989</em> or equivalent legislation. It does not perform clinical decision support, diagnosis, or treatment recommendation functions.</p>
+
+      <hr>
+
+      <h2>6. Data Storage &amp; Security</h2>
+      <ul>
+        <li>All health records, notes, medications, and summaries are stored in an encrypted database on your device.</li>
+        <li>All data transmitted between the App and the processing server is encrypted using TLS (HTTPS).</li>
+        <li>The HealthLens processing server does not persist your health data after processing.</li>
+        <li>Your device passcode and biometric lock protect your locally stored data.</li>
+      </ul>
+      <p>Device backups (iCloud / Google Backup) may include HealthLens data under Apple&rsquo;s and Google&rsquo;s respective policies. Use Settings &rarr; Export to create your own portable backup.</p>
+
+      <hr>
+
+      <h2>7. Third-Party Services</h2>
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Data shared</th><th>Retention</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Anthropic</strong></td>
+            <td>AI document analysis (Claude)</td>
+            <td>Document text / images (transiently)</td>
+            <td>Up to 30 days (request logs only)</td>
+          </tr>
+          <tr>
+            <td><strong>Apple</strong></td>
+            <td>App distribution, Sign-In, billing</td>
+            <td>Governed by Apple&rsquo;s policies</td>
+            <td>Per Apple&rsquo;s policy</td>
+          </tr>
+          <tr>
+            <td><strong>Google</strong></td>
+            <td>App distribution, Sign-In, billing</td>
+            <td>Governed by Google&rsquo;s policies</td>
+            <td>Per Google&rsquo;s policy</td>
+          </tr>
+          <tr>
+            <td><strong>RevenueCat</strong></td>
+            <td>Subscription management</td>
+            <td>Subscription status, anonymous device ID &mdash; no health data</td>
+            <td>Per RevenueCat&rsquo;s policy</td>
+          </tr>
+          <tr>
+            <td><strong>DigitalOcean</strong></td>
+            <td>Cloud hosting (Sydney, AU)</td>
+            <td>Infrastructure only &mdash; no health data stored</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>8. Children&rsquo;s Privacy</h2>
+      <p>HealthLens is intended for users aged 17 and over. We do not knowingly collect personal information from children under 17. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a> if you believe a child under 17 has used the App.</p>
+
+      <hr>
+
+      <h2 id="rights">9. Your Rights by Country</h2>
 
       <h3>Australia (Privacy Act 1988)</h3>
-      <p>Access, correct, or complain about your personal information. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved complaints: Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au" target="_blank" rel="noopener">oaic.gov.au</a>).</p>
+      <p>You have the right to access, correct, or complain about your personal information. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. We will respond within 30 days. Unresolved complaints: <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">Office of the Australian Information Commissioner</a>.</p>
+      <p>If a data breach occurs that is likely to result in serious harm, we will notify you and the OAIC as required under the Notifiable Data Breaches scheme.</p>
 
       <h3>New Zealand (Privacy Act 2020)</h3>
-      <p>Access, correct, or complain. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: Office of the Privacy Commissioner NZ (<a href="https://www.privacy.org.nz" target="_blank" rel="noopener">privacy.org.nz</a>).</p>
+      <p>You have the right to access, correct, or complain. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: <a href="https://www.privacy.org.nz" target="_blank" rel="noopener">Office of the Privacy Commissioner NZ</a>.</p>
 
       <h3>United States</h3>
-      <p>We are not a HIPAA-covered entity. Subject to FTC Act Section 5 and the FTC Health Breach Notification Rule. In the event of a breach we will notify affected individuals within 60 days. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>.</p>
+      <p>We are not a HIPAA-covered entity. We are subject to the FTC Act (Section 5) and the FTC Health Breach Notification Rule (16 CFR Part 318). In the event of a breach we will notify affected individuals within 60 days. California residents: we do not sell personal information. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a> with any privacy requests.</p>
 
       <h3>Canada (PIPEDA)</h3>
-      <p>Access, correct, or withdraw consent. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: Privacy Commissioner of Canada. Quebec residents: Law 25 rights apply.</p>
+      <p>You have the right to access, correct, or withdraw consent. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: Privacy Commissioner of Canada. Quebec residents: Law 25 rights apply &mdash; contact us for any Law 25 requests.</p>
 
       <hr>
 
-      <h2>Contact</h2>
+      <h2>10. Geographic Availability</h2>
+      <p>HealthLens is available in Australia, New Zealand, the United States, and Canada. The App is not available in the European Union or United Kingdom. This policy does not address GDPR or UK GDPR requirements.</p>
+
+      <hr>
+
+      <h2>11. Contact</h2>
       <p><a href="mailto:support@health-lens.com">support@health-lens.com</a></p>
 
     </div>
