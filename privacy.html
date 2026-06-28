@@ -59,7 +59,7 @@
       <p>When you upload a document or request an AI summary:</p>
       <ol>
         <li>Your document is transmitted over encrypted HTTPS to our processing server in Sydney, Australia (DigitalOcean).</li>
-        <li>The document content is forwarded to <strong>Anthropic</strong> (United States) for AI analysis using Claude models. This is a cross-border disclosure &mdash; see Section 4.</li>
+        <li>The document content is forwarded to <strong>Anthropic</strong> (United States) for AI processing using Claude models. This is a cross-border disclosure &mdash; see Section 4.</li>
         <li>The AI-generated result is returned to your device and stored locally.</li>
         <li><strong>No health document content is retained on HealthLens servers after processing.</strong> The pipeline is stateless.</li>
       </ol>
@@ -70,7 +70,7 @@
       <h2>4. Cross-Border Disclosure &amp; AI Processing</h2>
       <p>Document content is transmitted to <strong>Anthropic, Inc.</strong> (San Francisco, United States) for AI processing. This is a cross-border disclosure under the Australian Privacy Act and equivalent laws in our other launch markets.</p>
       <ul>
-        <li>Anthropic processes your document content solely to generate the AI analysis returned to your device.</li>
+        <li>Anthropic processes your document content solely to generate the AI output returned to your device.</li>
         <li>Anthropic does not use API request content to train its models by default.</li>
         <li>Anthropic retains API request logs for up to <strong>30 days</strong> for safety monitoring, then deletes them.</li>
       </ul>
@@ -79,7 +79,7 @@
       <hr>
 
       <h2>5. AI Disclosure</h2>
-      <p>HealthLens uses Anthropic&rsquo;s Claude AI models to analyse documents and generate summaries. AI-generated content is labelled within the App. AI outputs may contain errors, omissions, or inaccuracies &mdash; they are for personal organisational purposes only and do not constitute medical advice.</p>
+      <p>HealthLens uses Anthropic&rsquo;s Claude AI models to read documents and generate plain-language summaries that organise your own records. AI-generated content is labelled within the App. AI outputs may contain errors, omissions, or inaccuracies &mdash; they are for personal organisational purposes only and do not constitute medical advice.</p>
       <p>HealthLens is not a Software as a Medical Device (SaMD) under the Australian <em>Therapeutic Goods Act 1989</em> or equivalent legislation. It does not perform clinical decision support, diagnosis, or treatment recommendation functions.</p>
 
       <hr>
@@ -103,7 +103,7 @@
         <tbody>
           <tr>
             <td><strong>Anthropic</strong></td>
-            <td>AI document analysis (Claude)</td>
+            <td>AI document processing (Claude)</td>
             <td>Document text / images (transiently)</td>
             <td>Up to 30 days (request logs only)</td>
           </tr>
