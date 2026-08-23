@@ -20,14 +20,14 @@
   <div class="container">
     <div class="page-header">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: 11 July 2026 &middot; Applies to: AU, NZ, US, Canada</p>
+      <p class="meta">Effective date: 11 July 2026 &middot; Applies to: AU, NZ</p>
     </div>
 
     <div class="doc">
 
       <h2>1. About This Policy</h2>
       <p>This policy explains how HealthLens collects, uses, stores, and handles your personal information. HealthLens is operated by <strong>Wavefront Labs Pty Ltd</strong> (ACN 700 147 940).</p>
-      <p>This policy applies to users in Australia, New Zealand, the United States, and Canada. Country-specific rights are set out in the <a href="#rights">Your Rights</a> section below.</p>
+      <p>This policy applies to users in Australia and New Zealand. Country-specific rights are set out in the <a href="#rights">Your Rights</a> section below.</p>
       <p>For privacy enquiries contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>.</p>
 
       <hr>
@@ -59,8 +59,8 @@
       <p><strong>Your health data is stored locally on your device only.</strong> HealthLens does not maintain a server-side database of your health records, notes, medications, or summaries.</p>
       <p>When you upload a document or request an AI summary:</p>
       <ol>
-        <li>Your document is transmitted over encrypted HTTPS to our processing server in Sydney, Australia (DigitalOcean).</li>
-        <li>The document content is forwarded to <strong>Anthropic</strong> (United States) for AI processing using Claude models. This is a cross-border disclosure &mdash; see Section 4.</li>
+        <li>Your document is transmitted over encrypted HTTPS to our processing server, hosted in Sydney, Australia.</li>
+        <li>The document content is forwarded to our AI processing provider (United States) for AI processing. This is a cross-border disclosure &mdash; see Section 4.</li>
         <li>The AI-generated result is returned to your device and stored locally.</li>
         <li><strong>No health document content is retained on HealthLens servers after processing.</strong> The pipeline is stateless.</li>
       </ol>
@@ -69,18 +69,18 @@
       <hr>
 
       <h2>4. Cross-Border Disclosure &amp; AI Processing</h2>
-      <p>Document content is transmitted to <strong>Anthropic, Inc.</strong> (San Francisco, United States) for AI processing. This is a cross-border disclosure under the Australian Privacy Act and equivalent laws in our other launch markets.</p>
+      <p>Document content is transmitted to our AI processing provider (based in the United States) for AI processing. This is a cross-border disclosure under the Australian Privacy Act and the New Zealand Privacy Act 2020.</p>
       <ul>
-        <li>Anthropic processes your document content solely to generate the AI output returned to your device.</li>
-        <li>Anthropic does not use API request content to train its models by default.</li>
-        <li>Anthropic retains API request logs for up to <strong>30 days</strong> for safety monitoring, then deletes them.</li>
+        <li>Our AI processing provider processes your document content solely to generate the AI output returned to your device.</li>
+        <li>Our AI processing provider does not use API request content to train its models by default.</li>
+        <li>Our AI processing provider retains API request logs for up to <strong>30 days</strong> for safety monitoring, then deletes them.</li>
       </ul>
-      <p>If you do not wish your document content to be transmitted to Anthropic, do not use the document upload or AI summary features. Manual notes and cycle tracking operate entirely on-device with no cross-border disclosure.</p>
+      <p>If you do not wish your document content to be transmitted to our AI processing provider, do not use the document upload or AI summary features. Manual notes and cycle tracking operate entirely on-device with no cross-border disclosure.</p>
 
       <hr>
 
       <h2>5. AI Disclosure</h2>
-      <p>HealthLens uses Anthropic&rsquo;s Claude AI models to read documents and generate plain-language summaries that organise your own records. AI-generated content is labelled within the App. AI outputs may contain errors, omissions, or inaccuracies &mdash; they are for personal organisational purposes only and do not constitute medical advice.</p>
+      <p>HealthLens uses AI models to read documents and generate plain-language summaries that organise your own records. AI-generated content is labelled within the App. AI outputs may contain errors, omissions, or inaccuracies &mdash; they are for personal organisational purposes only and do not constitute medical advice.</p>
       <p>HealthLens is not a Software as a Medical Device (SaMD) under the Australian <em>Therapeutic Goods Act 1989</em> or equivalent legislation. It does not perform clinical decision support, diagnosis, or treatment recommendation functions.</p>
 
       <hr>
@@ -99,12 +99,12 @@
       <h2>7. Third-Party Services</h2>
       <table>
         <thead>
-          <tr><th>Service</th><th>Purpose</th><th>Data shared</th><th>Retention</th></tr>
+          <tr><th>Category</th><th>Purpose</th><th>Data shared</th><th>Retention</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Anthropic</strong></td>
-            <td>AI document processing (Claude)</td>
+            <td><strong>AI processing provider</strong></td>
+            <td>AI document processing</td>
             <td>Document text / images (transiently)</td>
             <td>Up to 30 days (request logs only)</td>
           </tr>
@@ -121,13 +121,13 @@
             <td>Per Google&rsquo;s policy</td>
           </tr>
           <tr>
-            <td><strong>RevenueCat</strong></td>
+            <td><strong>Subscription management provider</strong></td>
             <td>Subscription management</td>
             <td>Subscription status, anonymous device ID &mdash; no health data</td>
-            <td>Per RevenueCat&rsquo;s policy</td>
+            <td>Per provider&rsquo;s policy</td>
           </tr>
           <tr>
-            <td><strong>DigitalOcean</strong></td>
+            <td><strong>Cloud hosting provider</strong></td>
             <td>Cloud hosting (Sydney, AU)</td>
             <td>Infrastructure only &mdash; no health data stored</td>
             <td>N/A</td>
@@ -151,16 +151,10 @@
       <h3>New Zealand (Privacy Act 2020)</h3>
       <p>You have the right to access, correct, or complain. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: <a href="https://www.privacy.org.nz" target="_blank" rel="noopener">Office of the Privacy Commissioner NZ</a>.</p>
 
-      <h3>United States</h3>
-      <p>We are not a HIPAA-covered entity. We are subject to the FTC Act (Section 5) and the FTC Health Breach Notification Rule (16 CFR Part 318). In the event of a breach we will notify affected individuals within 60 days. California residents: we do not sell personal information. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a> with any privacy requests.</p>
-
-      <h3>Canada (PIPEDA)</h3>
-      <p>You have the right to access, correct, or withdraw consent. Contact <a href="mailto:support@health-lens.com">support@health-lens.com</a>. Unresolved: Privacy Commissioner of Canada. Quebec residents: Law 25 rights apply &mdash; contact us for any Law 25 requests.</p>
-
       <hr>
 
       <h2>10. Geographic Availability</h2>
-      <p>HealthLens is available in Australia, New Zealand, the United States, and Canada. The App is not available in the European Union or United Kingdom. This policy does not address GDPR or UK GDPR requirements.</p>
+      <p>HealthLens is available in Australia and New Zealand only. The App is not available in the European Union, United Kingdom, United States, Canada, or any other jurisdiction. This policy does not address GDPR, UK GDPR, HIPAA, or PIPEDA requirements.</p>
 
       <hr>
 
